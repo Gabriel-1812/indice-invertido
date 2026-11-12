@@ -139,14 +139,14 @@ Cada fase termina num ponto onde você pode parar, fazer commit e voltar outro d
 ⏸️ **Marca de parada 5**
 
 ### Fase 6 — Experimentos (≈ 2h)
-- [ ] Baixar *Dom Casmurro* (Project Gutenberg, domínio público) para `dados/`. Decidir se remove o cabeçalho/rodapé de licença do Gutenberg e anotar.
-- [ ] Gerar versões maiores concatenando o texto (ex.: ×1, ×10, ×50) **por script**, sem commitar os arquivos gigantes.
-- [ ] Montar uma lista fixa de consultas (palavras que existem e que não existem; misture simples/E/OU ou fixe um tipo — e documente). Use `random.seed(...)` se sortear, para ser reproduzível.
-- [ ] Experimento 1: construção do índice, 1.000 buscas por varredura, 1.000 buscas com índice.
-- [ ] Experimento 2: 1, 10, 100, 1.000 consultas — varredura vs (construção + consultas).
-- [ ] Cada medição ao menos 3 vezes, registrar a **mediana** (`statistics.median`).
-- [ ] Garantir que leitura do arquivo e `print` estão **fora** do trecho cronometrado.
-- [ ] Salvar a saída (ex.: imprimir tabela em Markdown pronta para colar no relatório).
+- [x] Baixar *Dom Casmurro* (Project Gutenberg, domínio público) para `dados/`. Decidir se remove o cabeçalho/rodapé de licença do Gutenberg e anotar.
+- [x] Gerar versões maiores concatenando o texto (ex.: ×1, ×10, ×50) **por script**, sem commitar os arquivos gigantes.
+- [x] Montar uma lista fixa de consultas (palavras que existem e que não existem; misture simples/E/OU ou fixe um tipo — e documente). Use `random.seed(...)` se sortear, para ser reproduzível.
+- [x] Experimento 1: construção do índice, 1.000 buscas por varredura, 1.000 buscas com índice.
+- [x] Experimento 2: 1, 10, 100, 1.000 consultas — varredura vs (construção + consultas).
+- [x] Cada medição ao menos 3 vezes, registrar a **mediana** (`statistics.median`).
+- [x] Garantir que leitura do arquivo e `print` estão **fora** do trecho cronometrado.
+- [x] Salvar a saída (ex.: imprimir tabela em Markdown pronta para colar no relatório).
 
 **Pronto quando:** você tem as duas tabelas preenchidas e consegue apontar o "ponto de virada" do Experimento 2.
 ⏸️ **Marca de parada 6**
