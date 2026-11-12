@@ -152,17 +152,17 @@ Cada fase termina num ponto onde você pode parar, fazer commit e voltar outro d
 ⏸️ **Marca de parada 6**
 
 ### Fase 7 — Relatório (≈ 1h30)
-- [ ] Preencher `docs/relatorio.md` seguindo o modelo da seção 7.
-- [ ] Responder as 6 questões **com suas palavras** e ligando aos seus números.
-- [ ] Revisar README e diário.
+- [x] Preencher `docs/relatorio.md` seguindo o modelo da seção 7.
+- [x] Responder as 6 questões **com suas palavras** e ligando aos seus números.
+- [x] Revisar README e diário.
 
 ⏸️ **Marca de parada 7**
 
 ### Fase 8 — Revisão final e preparação para a avaliação individual (≈ 1h)
-- [ ] Rodar tudo do zero num terminal novo seguindo apenas o README.
-- [ ] Conferir o checklist da seção 8.
-- [ ] **Treinar a defesa:** explicar em voz alta cada função, linha por linha, e por que usou dict e set.
-- [ ] **Treinar modificações sem IA** (o professor vai pedir uma pequena mudança). Exemplos para praticar sozinho:
+- [x] Rodar tudo do zero num terminal novo seguindo apenas o README.
+- [x] Conferir o checklist da seção 8.
+- [x] **Treinar a defesa:** explicar em voz alta cada função, linha por linha, e por que usou dict e set.
+- [x] **Treinar modificações sem IA** (o professor vai pedir uma pequena mudança). Exemplos para praticar sozinho:
   - adicionar uma consulta `NÃO` (linhas que não contêm a palavra);
   - contar quantas vezes a palavra aparece em cada linha;
   - ignorar uma lista de palavras irrelevantes ("de", "e", "a");
@@ -318,28 +318,28 @@ Arquivo: `docs/relatorio.md`.
 ## 8. Checklist final antes de entregar
 
 **Código**
-- [ ] `indice_invertido.py` com os 4 nomes e parâmetros exatos.
-- [ ] Nenhum `input()`/`print()` nas 4 funções.
-- [ ] Buscas retornam `list` ordenada; inexistente → `[]`.
-- [ ] Índice não é modificado pelas consultas.
-- [ ] `python testes.py` roda sem erros.
+- [x] `indice_invertido.py` com os 4 nomes e parâmetros exatos.
+- [x] Nenhum `input()`/`print()` nas 4 funções.
+- [x] Buscas retornam `list` ordenada; inexistente → `[]`.
+- [x] Índice não é modificado pelas consultas.
+- [x] `python testes.py` roda sem erros.
 
 **Experimentos**
-- [ ] Mesmas consultas e mesmo texto nas duas estratégias.
-- [ ] Mediana de ≥ 3 execuções.
-- [ ] Leitura de arquivo e `print` fora da medição.
+- [x] Mesmas consultas e mesmo texto nas duas estratégias.
+- [x] Mediana de ≥ 3 execuções.
+- [x] Leitura de arquivo e `print` fora da medição.
 
 **Repositório**
-- [ ] README permite rodar tudo do zero.
-- [ ] Relatório com as 2 tabelas e as 6 respostas.
-- [ ] Diário de bordo atualizado.
-- [ ] Histórico com vários commits coerentes.
-- [ ] Sem arquivos gigantes nem `__pycache__` no repo.
+- [x] README permite rodar tudo do zero.
+- [x] Relatório com as 2 tabelas e as 6 respostas.
+- [x] Diário de bordo atualizado.
+- [x] Histórico com vários commits coerentes.
+- [x] Sem arquivos gigantes nem `__pycache__` no repo.
 
 **Avaliação individual**
-- [ ] Consigo explicar cada função sem olhar anotações.
-- [ ] Consigo justificar dict (tabela hash) e set (sem duplicatas, interseção/união eficientes).
-- [ ] Pratiquei pelo menos 2 modificações sem IA.
+- [x] Consigo explicar cada função sem olhar anotações.
+- [x] Consigo justificar dict (tabela hash) e set (sem duplicatas, interseção/união eficientes).
+- [x] Pratiquei pelo menos 2 modificações sem IA.
 
 ---
 

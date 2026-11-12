@@ -9,6 +9,15 @@ O programa lê um texto com várias linhas, constrói um **índice invertido** (
 - Python 3.10 ou superior (testado com Python 3.15 no Windows 11)
 - Nenhuma biblioteca externa
 
+## Como baixar
+
+```bash
+git clone https://github.com/Gabriel-1812/indice-invertido.git
+cd indice-invertido
+```
+
+No Windows, se o comando `python` não for reconhecido, use `py` no lugar (ex.: `py testes.py`).
+
 ## Estrutura
 
 | Arquivo | Conteúdo |
@@ -18,8 +27,8 @@ O programa lê um texto com várias linhas, constrói um **índice invertido** (
 | `testes.py` | Testes do enunciado e casos de borda |
 | `varredura.py` | Busca por varredura completa (sem índice) + teste de equivalência |
 | `experimentos.py` | Medição de desempenho das duas estratégias |
-| `dados/teste.txt` | Texto pequeno usado pelo programa de consultas |
-| `dados/o_cortico.txt` | Texto base dos experimentos |
+| `dados/o_cortico.txt` | Texto usado pelo programa de consultas e pelos experimentos |
+| `dados/teste.txt` | Texto pequeno do exemplo do enunciado |
 | `docs/relatorio.md` | Relatório: tabelas, respostas às questões e análise |
 | `docs/resultados_experimentos.md` | Saída gerada pelo `experimentos.py` |
 | `docs/diario_de_bordo.md` | Registro do uso de IA |
@@ -28,7 +37,7 @@ O programa lê um texto com várias linhas, constrói um **índice invertido** (
 
 ## Como executar
 
-Todos os comandos devem ser executados na pasta do projeto.
+Todos os comandos devem ser executados na pasta do projeto, nesta ordem.
 
 ### 1. Testes
 
@@ -43,18 +52,19 @@ python varredura.py    # deve exibir "Equivalência OK..."
 python main.py
 ```
 
-O programa lê `dados/teste.txt`, constrói o índice e aguarda consultas:
+O programa lê *O Cortiço* (`dados/o_cortico.txt`, sem a licença do Gutenberg), constrói o índice e aguarda consultas. Cada resposta mostra a quantidade de linhas encontradas e os números das linhas.
 
 | Tipo | Exemplo | Resultado |
 |---|---|---|
-| Simples | `python` | linhas que contêm a palavra |
-| E | `python E dados` | linhas que contêm **todas** as palavras |
-| OU | `python OU dados` | linhas que contêm **pelo menos uma** das palavras |
+| Simples | `bertoleza` | linhas que contêm a palavra |
+| E | `rita E bahiana` | linhas que contêm **todas** as palavras |
+| OU | `firmo OU jerônimo` | linhas que contêm **pelo menos uma** das palavras |
 
-- Aceita duas ou mais palavras: `python E dados E algoritmos`.
+- Aceita duas ou mais palavras: `joão E romão E bertoleza`.
 - Os operadores `E` e `OU` não diferenciam maiúsculas e minúsculas e não podem ser misturados na mesma consulta.
 - Digite `0` para sair.
 - Limitação: em consultas combinadas, a palavra `e` é interpretada como operador.
+- O livro usa a grafia de 1890 (ex.: `bahiana`, `João Romão`); pesquise as palavras como estão escritas no texto.
 
 ### 3. Experimentos
 
@@ -63,7 +73,7 @@ python experimentos.py      # texto original (leva cerca de 2 minutos)
 python experimentos.py 5    # opcional: texto repetido 5 vezes
 ```
 
-O resultado é impresso no terminal e salvo em `docs/resultados_experimentos.md`.
+O resultado é impresso no terminal e salvo em `docs/resultados_experimentos.md`, substituindo os resultados anteriores. Os tempos variam conforme a máquina; os valores do relatório foram medidos no computador descrito em `docs/relatorio.md`.
 
 ## Regras de normalização
 
