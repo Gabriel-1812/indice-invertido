@@ -122,18 +122,18 @@ Cada fase termina num ponto onde você pode parar, fazer commit e voltar outro d
 ⏸️ **Marca de parada 3** — aqui você já garantiu a base dos 70 pontos.
 
 ### Fase 4 — Programa de consultas `main.py` (≈ 1h)
-- [ ] Ler um arquivo (caminho padrão ou informado), construir o índice uma vez.
-- [ ] Loop de consultas: interpretar `palavra`, `a E b E c`, `a OU b`; comando para sair.
-- [ ] Mensagens amigáveis para consulta vazia ou formato inválido.
-- [ ] Atualizar o README com "como executar".
+- [x] Ler um arquivo (caminho padrão ou informado), construir o índice uma vez.
+- [x] Loop de consultas: interpretar `palavra`, `a E b E c`, `a OU b`; comando para sair.
+- [x] Mensagens amigáveis para consulta vazia ou formato inválido.
+- [x] Atualizar o README com "como executar".
 
 **Pronto quando:** dá para demonstrar o exemplo do enunciado (as 5 linhas sobre Python) ao vivo.
 ⏸️ **Marca de parada 4**
 
 ### Fase 5 — Busca por varredura `varredura.py` (≈ 1h)
-- [ ] Implementar busca simples, E e OU percorrendo o texto a cada chamada.
-- [ ] Reaproveitar a mesma normalização.
-- [ ] Teste de equivalência: para várias consultas, varredura e índice retornam exatamente o mesmo resultado.
+- [x] Implementar busca simples, E e OU percorrendo o texto a cada chamada.
+- [x] Reaproveitar a mesma normalização.
+- [x] Teste de equivalência: para várias consultas, varredura e índice retornam exatamente o mesmo resultado.
 
 **Pronto quando:** o teste de equivalência passa.
 ⏸️ **Marca de parada 5**
