@@ -116,7 +116,7 @@ Cada fase termina num ponto onde você pode parar, fazer commit e voltar outro d
 - [x] `buscar_e` com interseção e `buscar_ou` com união, aceitando 2 ou mais palavras.
 - [x] Decidir e documentar: a palavra **pesquisada** também é normalizada? (o usuário digita `Python` — deve achar `python`?)
 - [x] Decidir e documentar: o que acontece com lista de palavras vazia? E com uma palavra inexistente no meio de um E?
-- [ ] **Teste de não-modificação do índice:** guarde uma cópia do índice antes das consultas e compare depois. ⚠️ Existem operações de conjunto que alteram o próprio conjunto — se você aplicar uma delas direto no conjunto que está dentro do índice, quebra a regra sem perceber.
+- [x] **Teste de não-modificação do índice:** guarde uma cópia do índice antes das consultas e compare depois. ⚠️ Existem operações de conjunto que alteram o próprio conjunto — se você aplicar uma delas direto no conjunto que está dentro do índice, quebra a regra sem perceber.
 
 **Pronto quando:** testes 2 e 3 do enunciado + seus testes de borda passam, e o índice sai intacto.
 ⏸️ **Marca de parada 3** — aqui você já garantiu a base dos 70 pontos.
