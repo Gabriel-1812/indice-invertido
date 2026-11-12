@@ -14,3 +14,13 @@ def buscar_e(indice, palavras):
 def buscar_ou(indice, palavras): 
 # Retorna as linhas que contêm PELO MENOS UMA das palavras. 
     pass 
+
+def normalizar_palavras(linha):
+    pontuacoes = str.maketrans('','', '.,!?;:-...—')
+    linha = linha.translate(pontuacoes)
+    vetor = linha.lower().split()
+    return vetor
+
+text = "Python, Programação! e AÇÃO."
+print(normalizar_palavras(text))
+
