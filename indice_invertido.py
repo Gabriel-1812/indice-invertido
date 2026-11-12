@@ -1,3 +1,5 @@
+import re
+
 def construir_indice(texto): 
 # Recebe um texto com várias linhas. 
 # Retorna um dicionário: palavra -> conjunto de linhas. 
@@ -15,11 +17,15 @@ def construir_indice(texto):
 
 def buscar(indice, palavra): 
 # Retorna uma lista ordenada com as linhas da palavra. 
-    pontuacoes = str.maketrans('','', '.,!?;:-...—')
+    # Normaliza a consulta com a mesma regra usada na construção do índice.
+    termos = normalizar_palavras(palavra)
 
-    palavra = palavra.translate(pontuacoes)
-    palavra = palavra.lower().strip()
-    
+    # A busca simples aceita exatamente uma palavra.
+    if len(termos) != 1:
+        return []
+
+    palavra = termos[0]
+
     if palavra not in indice:
         resultado = []
     else:
@@ -60,9 +66,8 @@ def buscar_ou(indice, palavras):
 
 
 def normalizar_palavras(linha):
-    pontuacoes = str.maketrans('','', '.,!?;:-...—')
-
-    linha = linha.translate(pontuacoes)
-    vetor = linha.lower().split()
-
-    return vetor
+    # Palavra = sequência de letras (com ou sem acento) e/ou dígitos.
+    # Qualquer outro caractere (pontuação, aspas, parênteses, hífen, barra...)
+    # funciona como separador. Ex.: "guarda-chuva" -> ["guarda", "chuva"].
+    # [^\W_] = caracteres de palavra (\w) exceto o underline.
+    return re.findall(r"[^\W_]+", linha.lower())
