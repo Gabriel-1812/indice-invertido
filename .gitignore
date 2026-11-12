@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Textos grandes gerados nos experimentos (são recriados pelo script)
+dados/gerados/
