@@ -18,17 +18,17 @@
 
 | Medição | Tempo (ms) |
 |---|---:|
-| Construção do índice | 34,786 |
-| 1000 buscas por varredura | 18.573,063 |
-| 1000 buscas com índice | 0,917 |
+| Construção do índice | 35,146 |
+| 1000 buscas por varredura | 48.116,309 |
+| 1000 buscas com índice | 3,071 |
 
 ## Experimento 2 — Vantagem da indexação
 
 | Qtde de consultas | Varredura completa (ms) | Construção + consultas (ms) |
 |---:|---:|---:|
-| 1 | 18,924 | 31,803 |
-| 10 | 184,567 | 30,475 |
-| 100 | 1.847,996 | 30,988 |
-| 1000 | 18.679,954 | 31,910 |
+| 1 | 57,177 | 82,208 |
+| 10 | 480,205 | 77,456 |
+| 100 | 4.516,614 | 32,640 |
+| 1000 | 22.397,641 | 80,996 |
 
 Ponto de virada: a indexação passou a compensar a partir de 10 consulta(s) entre as quantidades testadas.
