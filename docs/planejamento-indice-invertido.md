@@ -85,27 +85,28 @@ indice-invertido/
 Cada fase termina num ponto onde você pode parar, fazer commit e voltar outro dia sem se perder. Estimativas são de tempo focado.
 
 ### Fase 0 — Preparação (≈ 30 min)
-- [ ] Criar o repositório no GitHub e clonar localmente.
-- [ ] Criar a estrutura de pastas, `README.md` esqueleto, `.gitignore` (ignorar `__pycache__/`, `.venv/` e os arquivos de texto gigantes gerados nos experimentos).
-- [ ] Criar `docs/diario_de_bordo.md` já com o modelo — e registrar esta primeira conversa.
-- [ ] Copiar os testes do enunciado para `testes.py` (vão falhar, é normal).
+- [x] Criar o repositório no GitHub e clonar localmente.
+- [x] Criar a estrutura de pastas, `README.md` esqueleto, `.gitignore` (ignorar `__pycache__/`, `.venv/` e os arquivos de texto gigantes gerados nos experimentos).
+- [x] Criar `docs/diario_de_bordo.md` já com o modelo — e registrar esta primeira conversa.
+- [x] Copiar os testes do enunciado para `testes.py` (vão falhar, é normal).
 
 **Pronto quando:** o repo existe, tem estrutura e o primeiro commit.
 ⏸️ **Marca de parada 0**
 
 ### Fase 1 — Normalização das palavras (≈ 1h)
-- [ ] Escrever uma função auxiliar que recebe **uma linha** e devolve as palavras já tratadas.
-- [ ] Antes de codar, responda por escrito (vai para o relatório/diário): o que é "pontuação" para mim? Como trato hífen ("guarda-chuva")? Apóstrofo? Números? Registre a decisão.
-- [ ] Testar essa função isoladamente com frases cheias de pontuação, maiúsculas e acentos.
+- [x] Escrever uma função auxiliar que recebe **uma linha** e devolve as palavras já tratadas.
+- Tratamento feito retornando palavras separadas em minúsculo, mantendo acentos e removendo pontuações (. , ! ? ; : - ... —)
+- [x] Testar essa função isoladamente com frases cheias de pontuação, maiúsculas e acentos.
 
 **Pronto quando:** `"Python, Programação! e AÇÃO."` vira as palavras esperadas, com acento preservado.
 ⏸️ **Marca de parada 1**
 
 ### Fase 2 — `construir_indice` (≈ 1h)
-- [ ] Percorrer as linhas com numeração começando em 1.
-- [ ] Usar a função da Fase 1 e montar o dicionário palavra → conjunto.
-- [ ] Testes 1 do enunciado passando.
-- [ ] Testes próprios: texto vazio, linhas vazias no meio, palavra repetida na mesma linha, mesma palavra com maiúscula/minúscula.
+- [x] Percorrer as linhas com numeração começando em 1.
+- [x] Usar a função da Fase 1 e montar o dicionário palavra → conjunto.
+- [x] Testes 1 do enunciado passando.
+- [x] Testes próprios: texto vazio, linhas vazias no meio, palavra repetida na mesma linha, mesma palavra com maiúscula/minúscula.
+- Função retorna um dicionário: {'palavra1' : {1,5}, 'palavra2': {5,0}}. palavra com as linhas que ela aparece.
 
 **Pronto quando:** todos os testes de construção passam.
 ⏸️ **Marca de parada 2**
